@@ -1,43 +1,43 @@
 # resource-schema
 
 ### WorkLoad
-| Resource Name | Version | Managed By |
+| Resource Name | Team | Managed By |
 | ------ | ------ | ------ |
-| Pod |  |  |
-| Deployment |  |  |
-| ReplicaSet |  |  |
-| HPAs |  |  |
-| DemonSet |  |  |
-| StatefulSet |  |  |
-| ConfigMap |  |  |
-| Secert |  |  |
-| Job |  |  |
-| CronJob |  |  |
+| Pod | 2-1 | 이태선 |
+| Deployment | 2-1 | 이태선 |
+| ReplicaSet | 2-1 | 이태선 |
+| HPAs | 2-1 | 이태선 |
+| DemonSet | 2-1 | 이태선 |
+| StatefulSet | 2-1 | 이태선 |
+| ConfigMap | 2-1 | 이태선 |
+| Secert | 1-1 | Not Form |
+| Job | 2-1 | 이태선 |
+| CronJob | 2-1 | 이태선 |
 
 ### Network
-| Resource Name | Version | Managed By |
+| Resource Name | Team | Managed By |
 | ------ | ------ | ------ |
-| Service |  |  |
-| Ingress |  |  |
-| NetworkPolicy |  |  |
+| Service | 2-3 | 김태윤 |
+| Ingress | 1-2 | 문준영 |
+| NetworkPolicy | 2-3 | 김태윤 |
 
 ### Storage
-| Resource Name | Version | Managed By |
+| Resource Name | Team | Managed By |
 | ------ | ------ | ------ |
-| StorageClass |  |  |
-| PersistentVolumeClaim |  |  |
-| PersistentVolume |  |  |
+| StorageClass | 2-4 | 리혜영 |
+| PersistentVolumeClaim | 2-4 | 리혜영 |
+| PersistentVolume | 2-4 | 리혜영 |
 
 ### Management
-| Resource Name | Version | Managed By |
+| Resource Name | Team | Managed By |
 | ------ | ------ | ------ |
-| Namespace |  |  |
-| LimitRange |  |  |
-| ResourceQuota |  |  |
-| CustomResourceDefinition |  |  |
-| Role |  |  |
-| RoleBiniding |  |  |
-| ClusterRole |  |  |
-| ClusterRoleBinding |  |  |
-| ServiceAccount |  |  |
-| Node |  |  |
+| Namespace | 1-3 | 이승원 |
+| LimitRange | 1-3 | 이승원 |
+| ResourceQuota | 1-3 | 이승원 |
+| CustomResourceDefinition | 1-3 | 이승원 |
+| Role | 1-3 | 이승원 |
+| RoleBiniding | 1-1 | Not Form |
+| ClusterRole | 1-3 | 이승원 |
+| ClusterRoleBinding | 1-1 | Not Form |
+| ServiceAccount | 1-3 | 이승원 |
+| Node | 1-3 | 이승원 |
