@@ -251,7 +251,10 @@
         "accessModes": {
           "description": "AccessModes contains all ways the volume can be mounted. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#access-modes",
           "type": ["array", "null"],
-          "items": { "type": ["string", "null"] }
+          "items": {
+            "type": ["string", "null"],
+            "enum": ["ReadWriteOnce", "ReadWriteMany", "ReadOnlyMany"]
+          }
         },
         "awsElasticBlockStore": {
           "description": "Represents a Persistent Disk resource in AWS.\n\nAn AWS EBS disk must exist before mounting to a container. The disk must also be in the same AWS zone as the kubelet. An AWS EBS disk can only be mounted as read/write once. AWS EBS volumes support ownership management and SELinux relabeling.",
@@ -824,7 +827,11 @@
         },
         "persistentVolumeReclaimPolicy": {
           "description": "What happens to a persistent volume when released from its claim. Valid options are Retain (default for manually created PersistentVolumes), Delete (default for dynamically provisioned PersistentVolumes), and Recycle (deprecated). Recycle must be supported by the volume plugin underlying this PersistentVolume. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#reclaiming",
-          "type": ["string", "null"]
+          "type": ["array", "null"],
+          "items": {
+            "type": ["string", "null"],
+            "enum": ["Delete", "Retain"]
+          }
         },
         "photonPersistentDisk": {
           "description": "Represents a Photon Controller persistent disk resource.",
