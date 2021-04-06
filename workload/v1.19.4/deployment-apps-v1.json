@@ -1655,6 +1655,20 @@
                                 }
                               ]
                             },
+                            "properties": {
+                              "cpu": {
+                                "type": [
+                                  "string",
+                                  "null"
+                                ]
+                              },
+                              "memory": {
+                                "type": [
+                                  "string",
+                                  "null"
+                                ]
+                              }
+                            },
                             "description": "Requests describes the minimum amount of compute resources required. If Requests is omitted for a container, it defaults to Limits if that is explicitly specified, otherwise to an implementation-defined value. More info: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/",
                             "type": "object"
                           }
@@ -2757,6 +2771,20 @@
                                   "type": "number"
                                 }
                               ]
+                            },
+                            "properties": {
+                              "cpu": {
+                                "type": [
+                                  "string",
+                                  "null"
+                                ]
+                              },
+                              "memory": {
+                                "type": [
+                                  "string",
+                                  "null"
+                                ]
+                              }
                             },
                             "description": "Requests describes the minimum amount of compute resources required. If Requests is omitted for a container, it defaults to Limits if that is explicitly specified, otherwise to an implementation-defined value. More info: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/",
                             "type": "object"
@@ -3880,6 +3908,20 @@
                                   "type": "number"
                                 }
                               ]
+                            },
+                            "properties": {
+                              "cpu": {
+                                "type": [
+                                  "string",
+                                  "null"
+                                ]
+                              },
+                              "memory": {
+                                "type": [
+                                  "string",
+                                  "null"
+                                ]
+                              }
                             },
                             "description": "Requests describes the minimum amount of compute resources required. If Requests is omitted for a container, it defaults to Limits if that is explicitly specified, otherwise to an implementation-defined value. More info: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/",
                             "type": "object"
@@ -5130,6 +5172,20 @@
                                               "type": "number"
                                             }
                                           ]
+                                        },
+                                        "properties": {
+                                          "cpu": {
+                                            "type": [
+                                              "string",
+                                              "null"
+                                            ]
+                                          },
+                                          "memory": {
+                                            "type": [
+                                              "string",
+                                              "null"
+                                            ]
+                                          }
                                         },
                                         "description": "Requests describes the minimum amount of compute resources required. If Requests is omitted for a container, it defaults to Limits if that is explicitly specified, otherwise to an implementation-defined value. More info: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/",
                                         "type": "object"
