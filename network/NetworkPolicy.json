@@ -263,8 +263,8 @@
                   "properties": {
                     "port": {
                       "oneOf": [
-                        { "type": ["string", "null"] },
-                        { "type": "integer" }
+                        { "title": "string", "type": ["string", "null"] },
+                        { "title": "integer", "type": "integer" }
                       ]
                     },
                     "protocol": {
@@ -501,8 +501,8 @@
                   "properties": {
                     "port": {
                       "oneOf": [
-                        { "type": ["string", "null"] },
-                        { "type": "integer" }
+                        { "title": "string", "type": ["string", "null"] },
+                        { "title": "integer", "type": "integer" }
                       ]
                     },
                     "protocol": {
