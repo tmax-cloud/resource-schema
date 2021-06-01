@@ -305,7 +305,7 @@
                 "type": ["string", "null"]
               },
               "targetPort": {
-                "oneOf": [{ "type": ["string", "null"] }, { "type": "integer" }]
+                "oneOf": [{ "title": "string", "type": ["string", "null"] }, { "title": "integer", "type": "integer" }]
               }
             },
             "additionalProperties": false
