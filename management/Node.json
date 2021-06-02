@@ -356,14 +356,14 @@
           "description": "Allocatable represents the resources of a node that are available for scheduling. Defaults to Capacity.",
           "type": "object",
           "additionalProperties": {
-            "oneOf": [{ "type": ["string", "null"] }, { "type": "integer" }]
+            "oneOf": [{"title": "string", "type": ["string", "null"] }, {"title": "integer", "type": "integer" }]
           }
         },
         "capacity": {
           "description": "Capacity represents the total resources of a node. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#capacity",
           "type": "object",
           "additionalProperties": {
-            "oneOf": [{ "type": ["string", "null"] }, { "type": "integer" }]
+            "oneOf": [{"title": "string", "type": ["string", "null"] }, {"title": "integer", "type": "integer" }]
           }
         },
         "conditions": {
