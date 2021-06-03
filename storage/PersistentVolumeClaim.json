@@ -269,8 +269,8 @@
         "capacity": {
           "additionalProperties": {
             "oneOf": [
-              { "type": ["string", "null"] },
-              { "type": ["number", "null"] }
+              { "title": "string", "type": ["string", "null"] },
+              { "title": "number", "type": ["number", "null"] }
             ]
           },
           "description": "Represents the actual resources of the underlying volume.",
