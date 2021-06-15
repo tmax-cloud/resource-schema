@@ -4,14 +4,16 @@
       "description": "CustomResourceDefinitionSpec describes how a user wants their resource to appear",
       "properties": {
         "conversion": {
-          "description": "conversion defines conversion settings for the CRD."
+          "description": "conversion defines conversion settings for the CRD.",
+          "type": ["string", "null"]
         },
         "group": {
           "description": "group is the API group of the defined custom resource. The custom resources are served under `/apis/<group>/...`. Must match the name of the CustomResourceDefinition (in the form `<names.plural>.<group>`).",
           "type": ["string", "null"]
         },
         "names": {
-          "description": "names specify the resource and kind names for the custom resource."
+          "description": "names specify the resource and kind names for the custom resource.",
+	  "type": ["string", "null"]
         },
         "preserveUnknownFields": {
           "description": "preserveUnknownFields indicates that object fields which are not specified in the OpenAPI schema should be preserved when persisting to storage. apiVersion, kind, metadata and known fields inside metadata are always preserved. This field is deprecated in favor of setting `x-preserve-unknown-fields` to true in `spec.versions[*].schema.openAPIV3Schema`. See https://kubernetes.io/docs/tasks/access-kubernetes-api/custom-resources/custom-resource-definitions/#pruning-versus-preserving-unknown-fields for details.",
@@ -141,7 +143,8 @@
           "type": ["string", "null"]
         },
         "schema": {
-          "description": "schema describes the schema used for validation, pruning, and defaulting of this version of the custom resource."
+          "description": "schema describes the schema used for validation, pruning, and defaulting of this version of the custom resource.",
+	  "type": ["string", "null"]
         },
         "served": {
           "description": "served is a flag enabling/disabling this version from being served via REST APIs",
@@ -152,7 +155,8 @@
           "type": ["boolean", "null"]
         },
         "subresources": {
-          "description": "subresources specify what subresources this version of the defined custom resource have."
+          "description": "subresources specify what subresources this version of the defined custom resource have.",
+	  "type": ["string", "null"]
         }
       },
       "required": ["name", "served", "storage"],
