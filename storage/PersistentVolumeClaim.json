@@ -186,13 +186,6 @@
         "resources": {
           "description": "Resources represents the minimum resources the volume should have. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#resources",
           "properties": {
-            "limits": {
-              "properties": {
-                "storage": { "type": ["string", "null"] }
-              },
-              "description": "Limits describes the maximum amount of compute resources allowed. More info: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/",
-              "type": ["object", "null"]
-            },
             "requests": {
               "properties": {
                 "storage": { "type": ["string", "null"] }
