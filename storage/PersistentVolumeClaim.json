@@ -190,7 +190,7 @@
               "properties": {
                 "storage": { "type": ["string", "null"] }
               },
-              "description": "Requests describes the minimum amount of compute resources required. If Requests is omitted for a container, it defaults to Limits if that is explicitly specified, otherwise to an implementation-defined value. More info: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/",
+              "description": "Request defines what size of volume is required by the claim. In the case of pvc linked with ceph, it can be expanded after creation.",
               "type": ["object", "null"]
             }
           },
