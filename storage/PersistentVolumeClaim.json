@@ -247,7 +247,8 @@
           "type": ["string", "null"]
         }
       },
-      "type": ["object", "null"]
+      "type": ["object", "null"],
+      "required": ["accessModes", "resources"]
     },
     "status": {
       "description": "PersistentVolumeClaimStatus is the current status of a persistent volume claim.",
