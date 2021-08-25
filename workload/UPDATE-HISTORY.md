@@ -55,3 +55,4 @@
     </details>
 - [Difinitions] "io.k8s.api.core.v1.PersistentVolume", "io.k8s.api.core.v1.PersistentVolumeClaim" 에서 status 제거 - IMS #260528
 - [All but not Definitions] 모든 oneOf 구문에 대해 "title"과 "description" 필드 추가 - IMS #261750
+- [Deployment, ReplicaSet, StatefulSet, DaemonSet] update spec.template.metadata.labels as required field - IMS #268947 - commit 1d39b07
