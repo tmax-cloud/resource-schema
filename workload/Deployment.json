@@ -374,6 +374,9 @@
                   "x-kubernetes-patch-strategy": "merge"
                 }
               }, 
+       	      "required": [
+	        "labels"
+	      ],
               "type": "object"
             }, 
             "spec": {
