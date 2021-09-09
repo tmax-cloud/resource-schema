@@ -6074,6 +6074,9 @@
               "type": "object"
             }
           }, 
+          "required": [
+            "spec"
+          ],
           "type": "object"
         }, 
         "ttlSecondsAfterFinished": {

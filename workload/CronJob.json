@@ -6206,6 +6206,9 @@
                       "type": "object"
                     }
                   }, 
+                  "required": [
+                    "spec"
+                  ],
                   "type": "object"
                 }, 
                 "ttlSecondsAfterFinished": {
@@ -6220,6 +6223,9 @@
               "type": "object"
             }
           }, 
+          "required": [
+            "spec"
+          ],
           "type": "object"
         }, 
         "schedule": {
