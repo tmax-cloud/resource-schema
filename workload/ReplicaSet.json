@@ -6071,7 +6071,8 @@
         }
       }, 
       "required": [
-        "selector"
+        "selector",
+	"template"
       ], 
       "type": "object"
     }, 
