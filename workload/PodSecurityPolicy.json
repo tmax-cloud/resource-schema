@@ -282,12 +282,14 @@
             "rule"
           ],
           "type": "object",
-          "if": {
-            "rule": {
-              "enum": [
-                {"const": "MustRunAs"},
-                {"const": "MayRunAs"}
-              ]
+           "if": {
+            "properties": {
+              "rule": {
+                "enum": [
+                  "MustRunAs",
+                  "MayRunAs"
+                ]
+              }
             }
           },
           "then": {
@@ -390,7 +392,19 @@
           "required": [
             "rule"
           ], 
-          "type": "object"
+          "type": "object",
+           "if": {
+            "properties": {
+              "rule": {
+                "enum": [
+                  "MustRunAs"
+                ]
+              }
+            }
+          },
+          "then": {
+            "required": ["ranges"]
+          }
         }, 
         "runAsUser": {
           "description": "runAsUser is the strategy that will dictate the allowable RunAsUser values that may be set.", 
@@ -438,8 +452,14 @@
             "rule"
           ], 
           "type": "object",
-          "if": {
-            "rule": {"const": "MustRunAs"}
+           "if": {
+            "properties": {
+              "rule": {
+                "enum": [
+                  "MustRunAs"
+                ]
+              }
+            }
           },
           "then": {
             "required": ["ranges"]
@@ -555,11 +575,13 @@
           ], 
           "type": "object",
           "if": {
-            "rule": {
-              "enum": [
-                {"const": "MustRunAs"},
-                {"const": "MayRunAs"}
-              ]
+            "properties": {
+              "rule": {
+                "enum": [
+                  "MustRunAs",
+                  "MayRunAs"
+                ]
+              }
             }
           },
           "then": {
