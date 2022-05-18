@@ -13,7 +13,7 @@ https://rjsf-team.github.io/react-jsonschema-form/
 | DemonSet | 2-1 | 최진호 |
 | StatefulSet | 2-1 | 최진호 |
 | ConfigMap | 2-1 | 최진호 |
-| Secert | 1-1 | Not Form |
+| Secert | 1-1 | 최진호 |
 | Job | 2-1 | 최진호 |
 | CronJob | 2-1 | 최진호 |
 
@@ -21,7 +21,7 @@ https://rjsf-team.github.io/react-jsonschema-form/
 | Resource Name | Team | Managed By |
 | ------ | ------ | ------ |
 | Service | 2-3 | 김태윤 |
-| Ingress | 1-2 | 문준영 |
+| Ingress | 1-2 | 유민지 |
 | NetworkPolicy | 2-3 | 김태윤 |
 
 ### Storage
@@ -39,8 +39,8 @@ https://rjsf-team.github.io/react-jsonschema-form/
 | ResourceQuota | 1-3 | 이승원 |
 | CustomResourceDefinition | 1-3 | 이승원 |
 | Role | 1-3 | 이승원 |
-| RoleBiniding | 1-1 | Not Form |
+| RoleBiniding | 1-1 | 이승원 |
 | ClusterRole | 1-3 | 이승원 |
-| ClusterRoleBinding | 1-1 | Not Form |
+| ClusterRoleBinding | 1-1 | 이승원 |
 | ServiceAccount | 1-3 | 이승원 |
 | Node | 1-3 | 이승원 |
