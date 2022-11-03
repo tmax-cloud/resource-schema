@@ -1,0 +1,47 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CD-to-console
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the "main" branch
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  cd-to-console:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v3
+
+      # Runs a single command using the runners shell
+      - name: Git clone from console repository
+        run: |
+          cd ..
+          git clone https://github.com/tmax-cloud/console.git
+          cd console
+      # Runs a set of commands using the runners shell
+      - name: Push schema to console repository
+        run: |
+          cp $GITHUB_WORKSPACE/management/key-mapping/* ../console/frontend/public/components/hypercloud/utils/schemas/management/
+          cp $GITHUB_WORKSPACE/network/key-mapping/* ../console/frontend/public/components/hypercloud/utils/schemas/network/
+          cp $GITHUB_WORKSPACE/storage/key-mapping/* ../console/frontend/public/components/hypercloud/utils/schemas/storage/
+          cp $GITHUB_WORKSPACE/workload/key-mapping/* ../console/frontend/public/components/hypercloud/utils/schemas/workload/
+          rm ../console/frontend/public/components/hypercloud/utils/schemas/management/output.xlsx
+          cd ../console
+          git config --global user.email "Hyowook_park@tmax.co.kr"
+          git config --global user.name "Park Hyowook"
+          git add -A
+          git commit -m 'schema update'
+          git push https://${{ secrets.CONSOLE_TOKEN }}@github.com/tmax-cloud/console.git HEAD:main
