@@ -44,3 +44,7 @@ https://rjsf-team.github.io/react-jsonschema-form/
 | ClusterRoleBinding | 1-1 | 이승원 |
 | ServiceAccount | 1-3 | 이승원 |
 | Node | 1-3 | 이승원 |
+
+# notice
+
+When this repository is changed, github action activate to update console repository.
