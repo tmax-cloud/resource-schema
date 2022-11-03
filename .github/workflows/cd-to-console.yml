@@ -44,4 +44,4 @@ jobs:
           git config --global user.name "Park Hyowook"
           git add -A
           git commit -m 'schema update'
-          git push https://${{ secrets.CONSOLE_TOKEN }}@github.com/tmax-cloud/console.git HEAD:main
+          git push https://${{ secrets.CONSOLE_TOKEN }}@github.com/tmax-cloud/console.git HEAD:master
