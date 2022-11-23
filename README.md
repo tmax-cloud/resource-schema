@@ -34,16 +34,16 @@ https://rjsf-team.github.io/react-jsonschema-form/
 ### Management
 | Resource Name | Team | Managed By |
 | ------ | ------ | ------ |
-| Namespace | 1-3 | 이승원 |
-| LimitRange | 1-3 | 이승원 |
-| ResourceQuota | 1-3 | 이승원 |
-| CustomResourceDefinition | 1-3 | 이승원 |
-| Role | 1-3 | 이승원 |
-| RoleBiniding | 1-1 | 이승원 |
-| ClusterRole | 1-3 | 이승원 |
-| ClusterRoleBinding | 1-1 | 이승원 |
-| ServiceAccount | 1-3 | 이승원 |
-| Node | 1-3 | 이승원 |
+| Namespace | 1-2 | 이승원 |
+| LimitRange | 1-2 | 이승원 |
+| ResourceQuota | 1-2 | 이승원 |
+| CustomResourceDefinition | 1-2 | 이승원 |
+| Role | 1-2 | 이승원 |
+| RoleBiniding | 1-2 | 이승원 |
+| ClusterRole | 1-2 | 이승원 |
+| ClusterRoleBinding | 1-2 | 이승원 |
+| ServiceAccount | 1-2 | 이승원 |
+| Node | 1-2 | 이승원 |
 
 # notice
 
