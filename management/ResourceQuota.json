@@ -249,7 +249,7 @@
       "description": "ResourceQuotaSpec defines the desired hard limits to enforce for Quota.",
       "properties": {
         "hard": {
-          "description": "hard is the set of desired hard limits for each named resource. Value can be 'Ki', 'Mi', 'Gi', 'Ti', 'Pi', 'Ei', 'K', 'M', 'G', 'T', 'P' and 'E'. More info: https://kubernetes.io/docs/concepts/policy/resource-quotas/",
+          "description": "hard is the set of desired hard limits for each named resource. For memory, value can be 'Ki', 'Mi', 'Gi', 'Ti', 'Pi', 'Ei', 'K', 'M', 'G', 'T', 'P' and 'E'. More info: https://kubernetes.io/docs/concepts/policy/resource-quotas/",
           "type": "object",
           "additionalProperties": {
             "oneOf": [{"title": "string", "type": ["string", "null"] }, {"title": "integer", "type": "integer" }]
@@ -262,7 +262,7 @@
       "description": "ResourceQuotaStatus defines the enforced hard limits and observed use.",
       "properties": {
         "hard": {
-          "description": "Hard is the set of enforced hard limits for each named resource. Value can be 'Ki', 'Mi', 'Gi', 'Ti', 'Pi', 'Ei', 'K', 'M', 'G', 'T', 'P' and 'E'. More info: https://kubernetes.io/docs/concepts/policy/resource-quotas/",
+          "description": "Hard is the set of enforced hard limits for each named resource. For memory, value can be 'Ki', 'Mi', 'Gi', 'Ti', 'Pi', 'Ei', 'K', 'M', 'G', 'T', 'P' and 'E'. More info: https://kubernetes.io/docs/concepts/policy/resource-quotas/",
           "type": "object",
           "additionalProperties": {
             "oneOf": [{"title": "string", "type": ["string", "null"] }, {"title": "integer", "type": "integer" }]
