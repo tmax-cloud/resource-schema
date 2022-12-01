@@ -246,7 +246,7 @@
       "additionalProperties": false
     },
     "spec": {
-      "description": "LimitRangeSpec defines a min/max usage limit for resources that match on kind.",
+      "description": "LimitRangeSpec defines a min/max usage limit for resources that match on kind. Value can be 'Ki', 'Mi', 'Gi', 'Ti', 'Pi', 'Ei', 'K', 'M', 'G', 'T', 'P' and 'E'.",
       "required": ["limits"],
       "properties": {
         "limits": {
