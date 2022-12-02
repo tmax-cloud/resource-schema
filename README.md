@@ -27,9 +27,9 @@ https://rjsf-team.github.io/react-jsonschema-form/
 ### Storage
 | Resource Name | Team | Managed By |
 | ------ | ------ | ------ |
-| StorageClass | 2-4 | 리혜영 |
-| PersistentVolumeClaim | 2-4 | 리혜영 |
-| PersistentVolume | 2-4 | 리혜영 |
+| StorageClass | 2-4 | 임근우 |
+| PersistentVolumeClaim | 2-4 | 임근우 |
+| PersistentVolume | 2-4 | 임근우 |
 
 ### Management
 | Resource Name | Team | Managed By |
