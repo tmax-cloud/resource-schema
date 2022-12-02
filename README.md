@@ -6,16 +6,16 @@ https://rjsf-team.github.io/react-jsonschema-form/
 ### WorkLoad
 | Resource Name | Team | Managed By |
 | ------ | ------ | ------ |
-| Pod | 2-1 | 최진호 |
-| Deployment | 2-1 | 최진호 |
-| ReplicaSet | 2-1 | 최진호 |
-| HPAs | 2-1 | 최진호 |
-| DemonSet | 2-1 | 최진호 |
-| StatefulSet | 2-1 | 최진호 |
-| ConfigMap | 2-1 | 최진호 |
-| Secert | 1-1 | 최진호 |
-| Job | 2-1 | 최진호 |
-| CronJob | 2-1 | 최진호 |
+| Pod | 2-1 | 천지환 |
+| Deployment | 2-1 | 천지환 |
+| ReplicaSet | 2-1 | 천지환 |
+| HPAs | 2-1 | 천지환 |
+| DemonSet | 2-1 | 천지환 |
+| StatefulSet | 2-1 | 천지환 |
+| ConfigMap | 2-1 | 천지환 |
+| Secert | 2-1 | 천지환 |
+| Job | 2-1 | 천지환 |
+| CronJob | 2-1 | 천지환 |
 
 ### Network
 | Resource Name | Team | Managed By |
