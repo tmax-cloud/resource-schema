@@ -190,7 +190,7 @@
               "properties": {
                 "storage": { "type": ["string", "null"] }
               },
-              "description": "Request defines what size of volume is required by the claim. In the case of pvc linked with ceph, it can be expanded after creation.",
+              "description": "Request defines what size of volume is required by the claim. In the case of pvc linked with ceph, it can be expanded after creation. For storage, value can be 'Ki', 'Mi', 'Gi', 'Ti', 'Pi', 'Ei', 'K', 'M', 'G', 'T', 'P' and 'E'.",
               "type": ["object", "null"]
             }
           },

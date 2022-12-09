@@ -335,7 +335,7 @@
           "type": "object"
         },
         "capacity": {
-          "description": "A description of the persistent volume's resources and capacity. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#capacity",
+          "description": "A description of the persistent volume's resources and capacity. For storage, value can be 'Ki', 'Mi', 'Gi', 'Ti', 'Pi', 'Ei', 'K', 'M', 'G', 'T', 'P' and 'E'. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#capacity",
           "type": "object",
           "additionalProperties": {
             "oneOf": [{ "title": "string", "type": ["string", "null"] }, { "title": "integer", "type": "integer" }]
