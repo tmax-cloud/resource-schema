@@ -250,7 +250,7 @@
       "required": ["limits"],
       "properties": {
         "limits": {
-          "description": "Limits is the list of LimitRangeItem objects that are enforced.",
+          "description": "Limits is the list of LimitRangeItem objects that are enforced. For memory, value can be 'Ki', 'Mi', 'Gi', 'Ti', 'Pi', 'Ei', 'K', 'M', 'G', 'T', 'P' and 'E'.",
           "type": "array",
           "items": {
             "description": "LimitRangeItem defines a min/max usage limit for any resource that matches on kind.",
