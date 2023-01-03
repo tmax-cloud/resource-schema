@@ -58,3 +58,18 @@
 - [Deployment, ReplicaSet, StatefulSet, DaemonSet] update spec.template.metadata.labels as required field - IMS #268947 - commit 1d39b07
 - [PodSecurityPolicy]  파드보안정책 생성 시, 필수입력 항목의 rule에 따라 range 값이 필수적으로 입력되어야 할 경우, range 값이 없으면 psp 생성이 안되도록 변경 - IMS #261101
 - [Pod, Deployment, StatefulSet, CronJob, Job, DaemonSet, ReplicaSet] add pod spec overhead description - IMS #291624
+- [Definitions] "HPA required 필드 추가" -IMS #293613
+    <details>
+    <summary>변경사항 Detail</summary>
+
+    - "io.k8s.api.autoscaling.v1.CrossVersionObjectReference" : "#/definitions/io.k8s.api.autoscaling.v1.CrossVersionObjectReference"
+        - add required - 'apiVersion' field
+
+    - "io.k8s.api.autoscaling.v2beta1.CrossVersionObjectReference" : "#/definitions/io.k8s.api.autoscaling.v2beta1.CrossVersionObjectReference"
+        - add required - 'apiVersion' field
+
+    - "io.k8s.api.autoscaling.v2beta2.CrossVersionObjectReference" : "#/definitions/io.k8s.api.autoscaling.v2beta2.CrossVersionObjectReference"
+        - add required - 'apiVersion' field
+
+    </details>
+
