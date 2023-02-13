@@ -72,4 +72,5 @@
         - add required - 'apiVersion' field
 
     </details>
+- [Job, CronJob] template.spec.restartPolicy 필수입력 항목으로 추가 및 description 수정 - IMS #293539
 
