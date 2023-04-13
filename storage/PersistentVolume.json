@@ -338,7 +338,10 @@
           "description": "A description of the persistent volume's resources and capacity. For storage, value can be 'Ki', 'Mi', 'Gi', 'Ti', 'Pi', 'Ei', 'K', 'M', 'G', 'T', 'P' and 'E'. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#capacity",
           "type": "object",
           "additionalProperties": {
-            "oneOf": [{ "title": "string", "type": ["string", "null"] }, { "title": "integer", "type": "integer" }]
+            "oneOf": [
+              { "title": "string", "type": ["string", "null"] },
+              { "title": "integer", "type": "integer" }
+            ]
           }
         },
         "cephfs": {
@@ -591,20 +594,6 @@
           },
           "additionalProperties": false,
           "type": "object"
-        },
-        "flocker": {
-          "description": "Represents a Flocker volume mounted by the Flocker agent. One and only one of datasetName and datasetUUID should be set. Flocker volumes do not support ownership management or SELinux relabeling.",
-          "properties": {
-            "datasetName": {
-              "description": "Name of the dataset stored as metadata -> name on the dataset for Flocker should be considered as deprecated",
-              "type": ["string", "null"]
-            },
-            "datasetUUID": {
-              "description": "UUID of the dataset. This is unique identifier of a Flocker dataset",
-              "type": ["string", "null"]
-            }
-          },
-          "additionalProperties": false
         },
         "gcePersistentDisk": {
           "description": "Represents a Persistent Disk resource in Google Compute Engine.\n\nA GCE PD must exist before mounting to a container. The disk must also be in the same GCE project and zone as the kubelet. A GCE PD can only be mounted as read/write once or read-only many times. GCE PDs support ownership management and SELinux relabeling.",
