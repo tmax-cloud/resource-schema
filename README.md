@@ -20,9 +20,9 @@ https://rjsf-team.github.io/react-jsonschema-form/
 ### Network
 | Resource Name | Team | Managed By |
 | ------ | ------ | ------ |
-| Service | 2-3 | 김태윤 |
+| Service | 2-3 | 이지민 |
 | Ingress | 3-2 | 박재호 |
-| NetworkPolicy | 2-3 | 김태윤 |
+| NetworkPolicy | 2-3 | 이지민 |
 
 ### Storage
 | Resource Name | Team | Managed By |
