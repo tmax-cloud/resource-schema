@@ -6,10 +6,10 @@ name: CD-to-console
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
-    branches: [ "main" ]
+    branches: [ "v1.25.0" ]
     paths: [ "management/key-mapping/**.json", "network/key-mapping/**.json", "storage/key-mapping/**.json", "workload/key-mapping/**.json" ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ "v1.25.0" ]
     paths: [ "management/key-mapping/**.json", "network/key-mapping/**.json", "storage/key-mapping/**.json", "workload/key-mapping/**.json" ]
 
   # Allows you to run this workflow manually from the Actions tab
